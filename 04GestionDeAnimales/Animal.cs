@@ -6,13 +6,21 @@ using System.Threading.Tasks;
 
 namespace _04GestionDeAnimales
 {
-    abstract class Animal
+    public abstract class Animal
     {
 
-        string nombre;
-        int edad;
-        Color color;
+       
 
+        public string Nombre { get; set; }
+        public int Edad { get; set; }
+        public Color Color { get; set; }
+
+        public Animal(string nombre, int edad, Color color)
+        {
+            this.Nombre = nombre;
+            this.Edad = edad;
+            this.Color = color;
+        }
 
         public abstract void hacerSonido();
         public abstract void dormir();

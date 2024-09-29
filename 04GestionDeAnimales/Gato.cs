@@ -6,11 +6,24 @@ using System.Threading.Tasks;
 
 namespace _04GestionDeAnimales
 {
-    internal class Gato : Animal
+    public class Gato : Animal
     {
-        public Gato(string nombre, int edad, Color color) 
+
+        bool TieneManchas {  get; set; }
+
+        public Gato(string nombre, int edad, Color color) : base(nombre, edad, color)
         { 
-            
+            this.TieneManchas = true;
+        }
+
+        public override void dormir()
+        {
+            System.Console.WriteLine("El gato está durmiendo");
+        }
+
+        public override void hacerSonido()
+        {
+            System.Console.WriteLine($"{Nombre}, está maullando");
         }
     }
 }
