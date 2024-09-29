@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _04GestionDeAnimales
 {
-    enum Color
+    public enum Color
     {
         ROJO,VERDE,NARANJA,AZUL,AMARILLO,MARRON,NEGRO,BLANCO
     }
