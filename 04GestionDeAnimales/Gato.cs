@@ -25,5 +25,19 @@ namespace _04GestionDeAnimales
         {
             System.Console.WriteLine($"{Nombre}, está maullando");
         }
+
+        public override string ToString()
+        {
+            if (TieneManchas)
+            {
+                return $"Gato(nombre: {Nombre}, edad: {Edad}, color: {Color}, tiene manchas: si)";
+            }
+            else 
+            {
+                return $"Gato(nombre: {Nombre}, edad: {Edad}, color: {Color}, tiene manchas: no)";
+
+            }
+
+        }
     }
 }
