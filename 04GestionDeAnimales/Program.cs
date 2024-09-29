@@ -1,9 +1,11 @@
-﻿class Program()
+﻿using _04GestionDeAnimales;
+
+class Program()
 {
 
 
     public static void Main()
     {
-        Console.WriteLine(
+        Menu.mostrarMenu();
     }
 }
