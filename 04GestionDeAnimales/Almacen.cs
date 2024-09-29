@@ -19,13 +19,21 @@ namespace _04GestionDeAnimales
 
         public static void mostrarAnimalPorNombre(string nombre)
         {
+            bool encontrado = false;
+
             foreach (Animal anim in ListaAnimales)
             {
                 if (anim.Nombre == nombre)
                 {
                     System.Console.WriteLine(anim);
+                    encontrado = true;
                 }
             }
+            if (!encontrado) 
+            {
+                System.Console.WriteLine($"No se ha encontrado el animal llamado: {nombre}");
+            }
+            
         }
         public static void mostrarAnimales()
         {
@@ -44,6 +52,7 @@ namespace _04GestionDeAnimales
                 {
                     if (ListaAnimales[i].Nombre == nombre)
                     {
+                        System.Console.WriteLine($"Se a eliminado a {nombre} de forma permanente");
                         ListaAnimales.RemoveAt(i);
                     }
                 }
