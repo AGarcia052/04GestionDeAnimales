@@ -13,5 +13,10 @@ namespace _04GestionDeAnimales
         int edad;
         Color color;
 
+
+        public abstract void hacerSonido();
+        public abstract void dormir();
+       
+
     }
 }
