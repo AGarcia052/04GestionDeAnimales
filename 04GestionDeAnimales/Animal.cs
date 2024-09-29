@@ -11,7 +11,7 @@ namespace _04GestionDeAnimales
 
         string nombre;
         int edad;
-
+        Color color;
 
     }
 }
