@@ -11,9 +11,9 @@ namespace _04GestionDeAnimales
 
         bool TieneManchas {  get; set; }
 
-        public Gato(string nombre, int edad, Color color) : base(nombre, edad, color)
+        public Gato(string nombre, int edad, Color color, bool tieneManchas) : base(nombre, edad, color)
         { 
-            this.TieneManchas = true;
+            this.TieneManchas = tieneManchas;
         }
 
         public override void dormir()
