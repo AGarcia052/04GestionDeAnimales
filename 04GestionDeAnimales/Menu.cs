@@ -21,7 +21,7 @@ namespace _04GestionDeAnimales
                 System.Console.WriteLine("3. Mostrar todos los animales");
                 System.Console.WriteLine("4. Buscar animal por su nombre");
                 System.Console.WriteLine("5. Eliminar animal por su nombre");
-                System.Console.WriteLine("6. Salir");
+                System.Console.WriteLine("6. Salir\n");
 
                 int.TryParse(System.Console.ReadLine(), out eleccion);
 
@@ -83,6 +83,8 @@ namespace _04GestionDeAnimales
 
             Almacen.agregarAnimal(new Perro(nombre, edad, color, raza));
 
+            System.Console.WriteLine("");
+
         }
         public static void opcionDos()
         {
@@ -123,6 +125,8 @@ namespace _04GestionDeAnimales
 
 
             Almacen.agregarAnimal(new Gato(nombre, edad, color, tieneManchas));
+
+            System.Console.WriteLine("");
         }
         public static void opcionCuatro()
         {

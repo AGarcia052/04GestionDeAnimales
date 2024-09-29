@@ -43,6 +43,7 @@ namespace _04GestionDeAnimales
                 System.Console.WriteLine(anim);
 
             }
+            System.Console.WriteLine("");
         }
         public static void eliminarAnimalPorNombre(string nombre)
         {
@@ -52,7 +53,7 @@ namespace _04GestionDeAnimales
                 {
                     if (ListaAnimales[i].Nombre == nombre)
                     {
-                        System.Console.WriteLine($"Se a eliminado a {nombre} de forma permanente");
+                        System.Console.WriteLine($"Se a eliminado a {nombre} de forma permanente\n");
                         ListaAnimales.RemoveAt(i);
                     }
                 }
