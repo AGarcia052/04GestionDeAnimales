@@ -26,5 +26,12 @@ namespace _04GestionDeAnimales
         {
             System.Console.WriteLine($"{Nombre}, está ladrando");
         }
+
+        public override string ToString()
+        {
+           
+            return $"Perro(nombre: {Nombre}, edad: {Edad}, color: {Color}, raza: {Raza})";
+            
+        }
     }
 }
